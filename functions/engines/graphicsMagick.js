@@ -1,4 +1,4 @@
-const gm = require('gm').subClass({ imageMagick: true });
+const gm = require('gm');
 const path = require("path");
 
 const pdfToPng = (pdfDetails, pngFilePath, config) => {
