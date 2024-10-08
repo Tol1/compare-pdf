@@ -11,6 +11,7 @@ const pdfToPng = (pdfDetails, pngFilePath, config) => {
 			.command(command)
 			.density(config.settings.density, config.settings.density)
 			.quality(config.settings.quality)
+			.append()
 			.write(pngFilePath, (err) => {
 				err ? reject(err) : resolve();
 			});
